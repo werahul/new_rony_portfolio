@@ -59,7 +59,7 @@ const Testimonial = () => {
         <div className='flex items-center justify-center mt-20'>
             {testimonialData.map((testimonial, index) => (
                 <div key={index} className={`testimonial-item ${index === currentDiv ? 'active' : ''}`}>
-                    <div className="w-[1100px] h-[400px] bg-[#3f93f3] rounded-[30px] py-10 ">
+                    <div className="min-w-[1200px] h-[400px] bg-[#3f93f3] rounded-[30px] py-10 ">
                         <TestimonialItem {...testimonial} />
                     </div>
                 </div>

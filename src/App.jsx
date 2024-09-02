@@ -1,16 +1,27 @@
-import React, { useState, useEffect } from 'react';
-import { Header, Intro, About, AutoNameing, Services, ProjectCard, AutoNameing2, TestiApp, Form, SwirlCursor, ThreeComp, Loader } from './components'
+import React, { useState, useEffect } from "react";
+import {
+  Header,
+  Intro,
+  About,
+  AutoNameing,
+  Services,
+  ProjectCard,
+  AutoNameing2,
+  TestiApp,
+  Form,
+  Loader,
+  BoxAnimation,
 
+} from "./components";
 
 const App = () => {
-
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     // Simulate loading data or any asynchronous operation
     const timeout = setTimeout(() => {
       setLoading(false);
-    }, 4000); // Simulating 3 seconds of loading time
+    }, 100); // Simulating 3 seconds of loading time
 
     return () => clearTimeout(timeout);
   }, []);
@@ -20,23 +31,20 @@ const App = () => {
       {loading ? (
         <Loader />
       ) : (
-        <div>
-          <SwirlCursor />
+        <div>        
           <Header />
           <Intro />
           <About />
           <AutoNameing />
           <Services />
-          <ProjectCard />
+          <BoxAnimation/>
           <AutoNameing2 />
           <TestiApp />
           <Form />
         </div>
       )}
-
-
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

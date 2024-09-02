@@ -8,8 +8,9 @@ export { default as ProjectCard } from "./ProjectCard";
 export { default as TestiApp } from "./Testimonial";
 export { default as Form } from "./Form";
 export { default as ThreeComp } from "./ThreeComp";
-export { default as SwirlCursor } from "./SwirlCursor";
+
 export { default as Loader } from "./Loader";
+export { default as BoxAnimation } from "./BoxAnimation";
 
 
 

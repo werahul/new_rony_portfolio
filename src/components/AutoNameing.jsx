@@ -2,7 +2,7 @@ import React from 'react';
 import { arrow } from '../assets/images';
 const AutoNameing = () => {
     return (
-        <div className='lg:px-20 px-5 auto-scroll-container mt-10'>
+        <div className='lg:px-20 px-5 auto-scroll-container mt-20'>
             <div className='auto-scroll-content space-x-4'>
                 <img src={arrow} alt="" className='w-32 h-10' />
                 <div className='font-kanit font-extralight text-white text-3xl'>Web Developer</div>

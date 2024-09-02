@@ -9,17 +9,16 @@ const Header = () => {
     const [isOpen, setOpen] = useState(false);
 
     return (
-        <div className="">
+        <div className="max-container">
             <div className="relative">
-
-                <div className="flex items-center justify-between  lg:px-20 px-5 z-50">
+                <div className="flex items-center justify-between px-5 z-50">
                     <div className="loader">
                         <span></span>
                     </div>
                     <Hamburger toggled={isOpen} toggle={setOpen} color="#fff" size={80} />
                 </div>
                 <div
-                    className={`w-full h-[100vh] bg-[#03a9f4] absolute top-0 z-10 mainNav ${isOpen ? 'navOpen' : 'navClosed'
+                    className={`w-full h-[100vh] bg-[#2a617a] absolute top-0 z-10 mainNav ${isOpen ? 'navOpen' : 'navClosed'
                         }`}
                 >
                     <div className="flex items-end justify-end lg:px-20 px-5 pt-16 ">
